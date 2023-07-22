@@ -15,7 +15,7 @@ export default function ContactSection() {
           <h4 className="text-2xl">Social Media</h4>
           <div className="flex items-center gap-4">
             {contactInfo.map((info,index) => (
-              <SocialMediaCard key={index} icon={info.icon} linkUrl={info.linkUrl} />
+              <SocialMediaCard key={index} icon={"."+info.icon} linkUrl={info.linkUrl} />
             ))}
           </div>
         </div>

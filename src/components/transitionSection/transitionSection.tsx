@@ -7,7 +7,7 @@ export default function TransitionSection() {
         Hi there!
         <span>
           <Image
-            src={"/wave.gif"}
+            src={"./wave.gif"}
             width={30}
             height={30}
             alt="animated salute icon."
