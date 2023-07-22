@@ -7,8 +7,9 @@ export default function AboutMeSection() {
       <div className="flex flex-col gap-4">
         <h3 className="text-background text-3xl font-bold">About Me</h3>
         <div className="w-full flex gap-4 overflow-x-scroll snap-x">
-          {aboutMe.map((card) => (
+          {aboutMe.map((card,index) => (
             <Card
+            key={index}
               title={card.title}
               description={card.description}
               note={card.note ? card.note : undefined}
@@ -19,16 +20,16 @@ export default function AboutMeSection() {
       <div className="flex flex-col gap-4">
         <h3 className="text-background text-3xl font-bold">Tech Skills</h3>
         <div className="w-full flex gap-4 overflow-x-scroll snap-x">
-          {techSkills.map((card) => (
-            <Card title={card.title} description={card.description} icon={card.icon}/>
+          {techSkills.map((card,index) => (
+            <Card key={index} title={card.title} description={card.description} icon={card.icon}/>
           ))}
         </div>
       </div>
       <div className="flex flex-col gap-4">
         <h3 className="text-background text-3xl font-bold">Soft Skills</h3>
         <div className="w-full flex gap-4 overflow-x-scroll snap-x">
-          {softSkills.map((card)=>(
-            <Card title={card.title} description={card.description} icon={card.icon}/>
+          {softSkills.map((card,index)=>(
+            <Card key={index} title={card.title} description={card.description} icon={card.icon}/>
           ))}
         </div>
       </div>
