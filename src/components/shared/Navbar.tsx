@@ -16,9 +16,9 @@ export default function Navbar() {
   }, []);
   return (
     <nav className={`w-full h-[50px] flex justify-around items-center gap-2 transition-all duration-[.25s] bg-main ${isScrolled ? " shadow-md shadow-accent fixed top-0 left-0 z-[100]":""}`}>
-        <Link href={"#home"} className="text-background" scroll={false}>Home</Link>
-        <Link href={"#about"} className="text-background" scroll={false}>About Me</Link>
-        <Link href={"#contact"} className="text-background" scroll={false}>Contact</Link>
+        <a href={"#home"} className="text-background">Home</a>
+        <a href={"#about"} className="text-background">About Me</a>
+        <a href={"#contact"} className="text-background">Contact</a>
     </nav>
   )
 }
