@@ -1,0 +1,5 @@
+.imageBg {
+  background-image: radial-gradient(#ffffff 2.5px, transparent 2.5px);
+  background-size: 47px 47px;
+  background-color: #326273;
+}

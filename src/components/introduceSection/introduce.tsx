@@ -1,9 +1,9 @@
 import Image from "next/image";
-
+import styles from './introduce.module.css'
 export default function Introduction() {
   return (
     <section id="home" className="bg-main w-full h-screen flex flex-col justify-center items-center gap-4 shadow-md shadow-accent">
-      <div className="w-[200px] h-[200px] bg-accent rounded-full relative overflow-hidden">
+      <div className={"w-[200px] h-[200px] bg-accent rounded-full relative overflow-hidden " + styles.imageBg}>
         <Image
           src={"./Hello.png"}
           width={200}
