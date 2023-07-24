@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function ContactSection() {
   return (
-    <section id="#contact" className="w-full p-8 flex flex-col gap-8 shadow-md shadow-accent">
+    <section id="contact" className="w-full p-8 flex flex-col gap-8 shadow-md shadow-accent">
       <h3 className="text-3xl font-bold">Stay in Touch!</h3>
       <p className="text-lg">You can access my profile below.</p>
       <p className="text-lg">
