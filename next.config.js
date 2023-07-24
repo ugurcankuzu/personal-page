@@ -2,7 +2,7 @@
 
 const nextConfig = {
     output: "export",
-    basePath: "/personal-page"    
+    basePath: process.env.NODE_ENV === "production" ? "/personal-page" : ""    
 }
 
 module.exports = nextConfig
