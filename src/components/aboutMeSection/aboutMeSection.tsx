@@ -21,7 +21,7 @@ export default function AboutMeSection() {
         <h3 className="text-background text-3xl font-bold">Tech Skills</h3>
         <div className="w-full flex gap-4 overflow-x-scroll snap-x">
           {techSkills.map((card,index) => (
-            <Card key={index} title={card.title} description={card.description} icon={"."+card.icon}/>
+            <Card key={index} title={card.title} description={card.description} icon={`${process.env.NODE_ENV === "production" ? ".": ""}${card.icon}`}/>
           ))}
         </div>
       </div>
@@ -29,7 +29,7 @@ export default function AboutMeSection() {
         <h3 className="text-background text-3xl font-bold">Soft Skills</h3>
         <div className="w-full flex gap-4 overflow-x-scroll snap-x">
           {softSkills.map((card,index)=>(
-            <Card key={index} title={card.title} description={card.description} icon={"."+card.icon}/>
+            <Card key={index} title={card.title} description={card.description} icon={`${process.env.NODE_ENV === "production" ? ".": ""}${card.icon}`}/>
           ))}
         </div>
       </div>

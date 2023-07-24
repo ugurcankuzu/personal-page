@@ -7,7 +7,7 @@ export default function TransitionSection() {
         Hi there!
         <span>
           <Image
-            src={"./wave.gif"}
+            src={`${process.env.NODE_ENV === "production" ? ".":""}/wave.gif`}
             width={30}
             height={30}
             alt="animated salute icon."

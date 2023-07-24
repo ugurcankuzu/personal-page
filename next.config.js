@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-    output: "export",
-    basePath: process.env.NODE_ENV === "production" ? "/personal-page" : ""    
-}
+  output: process.env.NODE_ENV === "production" ? "export" : undefined,
+  basePath: process.env.NODE_ENV === "production" ? "/personal-page" : "",
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
