@@ -4,7 +4,7 @@ export default function Introduction() {
     <section id="home" className="bg-main w-full h-screen flex flex-col justify-center items-center gap-4 shadow-md shadow-accent">
       <div className={"w-[200px] h-[200px] bg-accent rounded-full relative overflow-hidden "}>
         <Image
-          src={process.env.NODE_ENV === "production" ? ".":"" +"/Hello.png"}
+          src={`${process.env.NODE_ENV === "production" ? ".":""}/Hello.png`}
           width={200}
           height={200}
           className="absolute -bottom-[5px] left-1/2 -translate-x-1/2"
