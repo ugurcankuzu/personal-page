@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "NODE_ENV=development next dev",
+    "build": "NODE_ENV=production next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -23,6 +23,6 @@
     "typescript": "5.1.6"
   },
   "volta": {
-    "node": "14.21.3"
+    "node": "18.17.0"
   }
 }

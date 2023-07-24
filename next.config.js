@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfigForDev = {}
+const nextConfigForProd = {
     output: "export",
-    basePath: "/personal-page"
-    
+    basePath: "/personal-page"    
 }
 
-module.exports = nextConfig
+module.exports = process.env.NODE_ENV === "production" ? nextConfigForProd : nextConfigForDev
