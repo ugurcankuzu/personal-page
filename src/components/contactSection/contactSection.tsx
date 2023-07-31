@@ -1,6 +1,6 @@
 import contactInfo from "@/store/contactInfo";
-import SocialMediaCard from "./socialMediaCard";
 import Link from "next/link";
+import SocialMediaCard from "./socialMediaCard";
 
 export default function ContactSection() {
   return (
@@ -24,6 +24,9 @@ export default function ContactSection() {
           <Link href={"mailto:ugurcankzuit@gmail.com"} className="text-main">
             ugurcankzuit@gmail.com
           </Link>
+        </div>
+        <div>
+            <a href={`${process.env.NODE_ENV === "production" ? "." : ""}/cv.pdf`} className="bg-main px-4 py-2 rounded-md text-white" download>Download CV</a>
         </div>
       </div>
     </section>
