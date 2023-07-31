@@ -18,7 +18,7 @@ export default function Card({ title, description, icon, note }: ICard) {
         )}
         {title}
       </h4>
-      {description.split("\n").map(paragraph => <p className="text-background font-normal text-[.5rem]">{paragraph}</p>)}
+      {description.split("\n").map((paragraph,index) => <p key={index} className="text-background font-normal text-[.5rem]">{paragraph}</p>)}
       {note ? <p className="text-[.5rem] text-background/50">{note}</p> : null}
     </div>
   );
